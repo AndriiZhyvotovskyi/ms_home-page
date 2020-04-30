@@ -1,0 +1,39 @@
+body {
+  width: auto;
+  height: 100vh;
+  background-image: url(../img/background-photo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  color: white;
+  height: 100vh;
+}
+
+.red {
+  background-color: red;
+  margin-bottom: 100px;
+}
+
+.blue {
+  
+  background-color: white;
+  color: black;
+}
+
+.empty {
+
+}
+.yellow {
+  background-color: yellow;
+}
