@@ -70,7 +70,6 @@ body {
 
 .header {
     color: white;
-    height: 100vh;
     padding-top: 20px;
 }
 
@@ -184,6 +183,10 @@ body {
     color: #ffff00;
 }
 
+.menu {
+    margin-bottom: 50px;
+}
+
 .menu__list {
     display: flex;
     justify-content: space-between;
@@ -231,6 +234,24 @@ body {
 
 /*------------------------------------- portfolio---------------------------------- */
 
-.portfolio {
-    height: 500px;
+.portfolio {}
+
+.portfolio__list {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.portfolio__title {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.portfolio__list-item {
+    width: 360px;
+    margin-bottom: 10px;
 }
