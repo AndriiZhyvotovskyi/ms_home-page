@@ -62,13 +62,17 @@
         }
         
         .container {
-            max-width: 1140px;
+            min-width: 1140px;
             margin: 0 auto;
         }
         
         .header {
             color: white;
             padding-top: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         
         .navigation {
@@ -76,7 +80,6 @@
             justify-content: space-between;
             font-size: 14px;
             font-weight: 600;
-            margin-bottom: 150px;
         }
         
         .logotype {
@@ -143,19 +146,7 @@
         }
         
         .header__title {
-            text-align: left;
-            margin-bottom: 60px;
-        }
-        
-        .developer {
-            font-size: 30px;
-            font-weight: 600;
-            text-transform: capitalize;
-            color: gray;
-        }
-        
-        .header__title-text {
-            text-align: right;
+            text-align: center;
             font-size: 80px;
             font-weight: 700;
             text-transform: uppercase;
@@ -168,7 +159,6 @@
         
         .arrow {
             text-align: center;
-            margin-bottom: 60px;
         }
         
         .arrow__item {
@@ -271,10 +261,6 @@
             transition: background-color 0.3s linear;
             opacity: 0;
         }
-        /* .overlay:hover {
-            opacity: 1;
-            transform: rotate(-2deg)
-        } */
         
         .portfolio__list-title {
             text-align: center;
@@ -296,7 +282,7 @@
                 opacity: 0;
             }
             100% {
-                transform: translateY(0);
+                transform: translateY(0;
                 opacity: 1;
             }
         }
