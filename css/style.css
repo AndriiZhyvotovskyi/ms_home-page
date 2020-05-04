@@ -1,3 +1,38 @@
+        @font-face {
+            font-family: 'Montserrat';
+            src: url('../font/montserrat-v14-latin_cyrillic-regular.woff') format('woff'), url('../font/montserrat-v14-latin_cyrillic-regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Anonymous Pro';
+            src: url('../font/anonymous-pro-v13-latin_cyrillic-regular.woff') format('woff'), url('../font/anonymous-pro-v13-latin_cyrillic-regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Caveat';
+            src: url('../font/caveat-v7-latin_cyrillic-regular.woff') format('woff'), url('../font/caveat-v7-latin_cyrillic-regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Jura';
+            src: url('../font/jura-v14-latin_cyrillic-regular.woff') format('woff'), url('../font/jura-v14-latin_cyrillic-regular.woff2') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+         :root {
+            --font-first: "Montserrat", sans-serif;
+            --font-second: "Jura", sans-serif;
+            --font-third: "Caveat", cursive;
+            --font-logotype: "Anonymous Pro", monospace;
+        }
+        
         * {
             margin: 0;
             padding: 0;
@@ -58,7 +93,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
-            font-family: 'Montserrat', sans-serif;
+            font-family: var(--font-first);
         }
         
         .container {
@@ -85,6 +120,7 @@
         .logotype {
             color: #ffffff;
             transition: color 200ms linear;
+            font-family: var(--font-logotype);
         }
         
         .logotype:hover {
@@ -100,6 +136,7 @@
         .navigation__list-link {
             color: #ffffff;
             transition: color 200ms linear;
+            font-family: var(--font-second);
         }
         
         .navigation__list-link:hover {
@@ -125,19 +162,19 @@
             transition: 200ms linear;
         }
         
-        .navigation__list-link_instagram::before {
+        .navigation__list-link-instagram::before {
             background-image: url(../img/header/instagram.png);
         }
         
-        .navigation__list-link_facebook::before {
+        .navigation__list-link-facebook::before {
             background-image: url(../img/header/facebook.png);
         }
         
-        .navigation__list-link_twitter::before {
+        .navigation__list-link-twitter::before {
             background-image: url(../img/header/twitter.png);
         }
         
-        .navigation__list-link_pinterest::before {
+        .navigation__list-link-pinterest::before {
             background-image: url(../img/header/pinterest.png);
         }
         
@@ -151,6 +188,8 @@
             font-weight: 700;
             text-transform: uppercase;
             line-height: 80px;
+            font-weight: 600;
+            font-family: var(--font-second);
         }
         
         .color_decoration {
@@ -193,9 +232,9 @@
         
         .menu__list-link {
             color: #ffffff;
-            text-transform: uppercase;
             font-weight: 600;
             transition: 200ms linear;
+            font-family: var(--font-second);
         }
         
         .menu__list-link:hover {
@@ -227,11 +266,12 @@
             padding: 40px 40px 0 40px;
         }
         
-        .portfolio__title {
+        .section__title {
             text-align: center;
             color: #fff;
             font-size: 30px;
             margin-bottom: 20px;
+            font-family: var(--font-second);
         }
         
         .portfolio__list-item {
