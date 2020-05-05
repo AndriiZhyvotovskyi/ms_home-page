@@ -33,6 +33,36 @@
             --font-logotype: "Anonymous Pro", monospace;
         }
         
+        @keyframes animation_background {
+            0% {
+                box-shadow: 25px 0px 125px -50px rgba(0, 0, 0, 0.75);
+            }
+            12% {
+                box-shadow: 25px 25px 90px -36px rgba(0, 0, 0, 0.75);
+            }
+            25% {
+                box-shadow: 0px 25px 90px -36px rgba(0, 0, 0, 0.75);
+            }
+            37% {
+                box-shadow: -25px 25px 90px -36px rgba(0, 0, 0, 0.75);
+            }
+            50% {
+                box-shadow: -25px 0px 90px -36px rgba(0, 0, 0, 0.75);
+            }
+            62% {
+                box-shadow: -25px -25px 90px -36px rgba(0, 0, 0, 0.75);
+            }
+            75% {
+                box-shadow: 0px -25px 90px -36px rgba(0, 0, 0, 0.75);
+            }
+            87% {
+                box-shadow: 25px -25px 90px -36px rgba(0, 0, 0, 0.75);
+            }
+            100% {
+                box-shadow: 25px 0px 125px -50px rgba(0, 0, 0, 0.75);
+            }
+        }
+        
         * {
             margin: 0;
             padding: 0;
@@ -248,41 +278,24 @@
         .menu__list-item:hover .menu__list-link {
             color: #000000;
         }
-        /* ---------------------------------------about_me--------------------------------- */
+        /* ---------------------------------------greeting--------------------------------- */
         
-        .about-me {
+        .greeting {
             padding-top: 20px;
             padding-bottom: 20px;
             background-color: #fff;
-            margin-bottom: 50px;
         }
         
-        .about-me__item {
-            display: flex;
-            justify-content: center;
-        }
-        
-        .greeting {
+        .greeting__item {
             display: flex;
             align-items: center;
-            margin-bottom: 50px;
         }
+        /*------------------------------------ portfolio---------------------------------- */
         
-        .about-me__discription-item {
-            max-width: 700px;
-            margin-bottom: 30px;
+        .portfolio {
+            padding-top: 70px;
+            padding-bottom: 70px;
         }
-        /*         
-        .fa-html5:hover .decoration {
-            color: #ffff00;
-        } */
-        
-        .decoration:hover.about-me__list-item {
-            color: #ffff00;
-        }
-        /*------------------------------------- portfolio---------------------------------- */
-        
-        .portfolio {}
         
         .portfolio__list {
             background-color: #fff;
@@ -340,6 +353,31 @@
             animation: name-apper 0.5s linear;
             animation-iteration-count: 1;
         }
+        /* ---------------------------------------about_me--------------------------------- */
+        
+        .about-me {
+            padding-top: 70px;
+            padding-bottom: 70px;
+            background-color: #fff;
+        }
+        
+        .about-me__item {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 700px;
+            border: 1px solid rgb(156, 156, 156);
+            animation-name: animation_background;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-timing-funcrion: linear;
+        }
+        
+        .about-me__discription-item {
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
         
         .fab,
         .fas,
@@ -360,6 +398,15 @@
         
         .about-me__item {
             display: flex;
+        }
+        
+        .about-me__list-item {
+            display: block;
+            content: '\f17b';
+            font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+            font-weight: 900;
+            font-size: 50px;
+            cursor: pointer;
         }
         
         @keyframes name-apper {
