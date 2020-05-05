@@ -35,31 +35,31 @@
         
         @keyframes animation_background {
             0% {
-                box-shadow: 25px 0px 125px -50px rgba(160, 56, 120, 0.75);
-            }
-            12% {
-                box-shadow: 25px 25px 90px -36px rgba(160, 56, 120, 0.75);
+                box-shadow: 25px 0px 70px -26px rgba(160, 56, 120, 0.75);
             }
             25% {
-                box-shadow: 0px 25px 90px -36px rgba(160, 56, 120, 0.75);
-            }
-            37% {
-                box-shadow: -25px 25px 90px -36px rgba(160, 56, 120, 0.75);
+                box-shadow: 0px 25px 70px -26px rgba(160, 56, 120, 0.75);
             }
             50% {
-                box-shadow: -25px 0px 90px -36px rgba(160, 56, 120, 0.75);
-            }
-            62% {
-                box-shadow: -25px -25px 90px -36px rgba(160, 56, 120, 0.75);
+                box-shadow: -25px 0px 70px -26px rgba(160, 56, 120, 0.75);
             }
             75% {
-                box-shadow: 0px -25px 90px -36px rgba(160, 56, 120, 0.75);
-            }
-            87% {
-                box-shadow: 25px -25px 90px -36px rgba(160, 56, 120, 0.75);
+                box-shadow: 0px -25px 70px -26px rgba(160, 56, 120, 0.75);
             }
             100% {
-                box-shadow: 25px 0px 125px -50px rgba(160, 56, 120, 0.75);
+                box-shadow: 25px 0px 70px -26px rgba(160, 56, 120, 0.75);
+            }
+        }
+        
+        @keyframes anim_arrow {
+            0% {
+                transform: translate(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+            100% {
+                transform: translateY(0);
             }
         }
         
@@ -84,6 +84,18 @@
             100% {
                 transform: translate(20px, -10px);
                 opacity: 1;
+            }
+        }
+        
+        @keyframes anim_shadow {
+            0% {
+                box-shadow: 0px 0px 20px 0px rgba(237, 253, 4, 0.75);
+            }
+            50% {
+                box-shadow: 0px 0px 0px 0px rgba(237, 253, 4, 0.75);
+            }
+            100% {
+                box-shadow: 0px 0px 20px 0px rgba(237, 253, 4, 0.75);
             }
         }
         
@@ -246,21 +258,25 @@
             font-family: var(--font-second);
         }
         
-        .color_decoration {
+        .color-decoration {
             color: #ffff00;
         }
         
-        .arrow {
+        .arrow-link {
             text-align: center;
+            animation-name: anim_arrow;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
         }
         
-        .arrow__item {
+        .arrow {
             color: #ffffff;
             font-size: 50px;
-            background-position: center;
         }
         
-        .arrow__item:hover {
+        .arrow:hover {
             color: #ffff00;
         }
         
@@ -308,11 +324,22 @@
             padding-top: 120px;
             padding-bottom: 120px;
             background-color: #fff;
+            animation-name: anim_shadow;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
         }
         
         .greeting__item {
             display: flex;
+            justify-content: space-between;
             align-items: center;
+        }
+        
+        .greeting__description {
+            max-width: 60%;
+            font-size: 25px;
         }
         /*------------------------------------ portfolio---------------------------------- */
         
@@ -326,6 +353,11 @@
             display: flex;
             flex-wrap: wrap;
             padding: 40px 40px 0 40px;
+            animation-name: anim_shadow;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
         }
         
         .section-title {
@@ -348,6 +380,7 @@
         
         .portfolio__list-item:hover {
             transform: scale(1.05);
+            box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
         }
         
         .portfolio__list-item:not(:nth-child(3n)) {
@@ -404,6 +437,11 @@
             padding-top: 120px;
             padding-bottom: 120px;
             background-color: #fff;
+            animation-name: anim_shadow;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
         }
         
         .about-me .section-title {
@@ -467,4 +505,9 @@
             background-color: #fff;
             margin-bottom: 70px;
             padding: 20px;
+            animation-name: anim_shadow;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
         }
