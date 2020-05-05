@@ -13,16 +13,16 @@
         }
         
         @font-face {
-            font-family: 'Caveat';
-            src: url('../font/caveat-v7-latin_cyrillic-regular.woff') format('woff'), url('../font/caveat-v7-latin_cyrillic-regular.woff2') format('woff2');
+            font-family: 'Jura';
+            src: url('../font/jura-v14-latin_cyrillic-regular.woff') format('woff'), url('../font/jura-v14-latin_cyrillic-regular.woff2') format('woff2');
             font-weight: 400;
             font-style: normal;
         }
         
         @font-face {
-            font-family: 'Jura';
-            src: url('../font/jura-v14-latin_cyrillic-regular.woff') format('woff'), url('../font/jura-v14-latin_cyrillic-regular.woff2') format('woff2');
-            font-weight: 400;
+            font-family: 'Font awesome';
+            src: url('../webfonts/fa-solid-900.woff') format('woff'), url('../webfonts/fa-solid-900.woff2') format('woff2');
+            font-weight: 900;
             font-style: normal;
         }
         
@@ -250,10 +250,35 @@
         }
         /* ---------------------------------------about_me--------------------------------- */
         
-        .about_me {
-            height: 300px;
+        .about-me {
+            padding-top: 20px;
+            padding-bottom: 20px;
             background-color: #fff;
             margin-bottom: 50px;
+        }
+        
+        .about-me__item {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .greeting {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        
+        .about-me__discription-item {
+            max-width: 700px;
+            margin-bottom: 30px;
+        }
+        /*         
+        .fa-html5:hover .decoration {
+            color: #ffff00;
+        } */
+        
+        .decoration:hover.about-me__list-item {
+            color: #ffff00;
         }
         /*------------------------------------- portfolio---------------------------------- */
         
@@ -316,13 +341,34 @@
             animation-iteration-count: 1;
         }
         
+        .fab,
+        .fas,
+        .far {
+            font-size: 70px;
+        }
+        
+        .about-me__list-program {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-right: 50px;
+        }
+        
+        .about-me__list-item {
+            margin-bottom: 20px;
+        }
+        
+        .about-me__item {
+            display: flex;
+        }
+        
         @keyframes name-apper {
             0% {
                 transform: translateY(-20px);
                 opacity: 0;
             }
             100% {
-                transform: translateY(0;
+                transform: translateY(0);
                 opacity: 1;
             }
         }
