@@ -202,59 +202,32 @@
             color: #ffff00;
         }
         
-        .navigation__list {
-            display: flex;
-            justify-content: space-between;
-            width: 600px;
-        }
-        
-        .navigation__list-link {
-            color: #ffffff;
-            transition: color 200ms linear;
-            font-family: var(--font-second);
-        }
-        
-        .navigation__list-link:hover {
+        .order-link {
             color: #ffff00;
-        }
-        
-        .navigation__list-item {
             position: relative;
-            padding-left: 30px;
+            transition: color .4s linear;
         }
         
-        .navigation__list-link::before {
+        .order-link:hover {
+            color: white;
+        }
+        
+        .order-link::after {
             content: '';
             display: block;
-            width: 26px;
-            height: 26px;
-            background-repeat: no-repeat;
-            background-position: center;
+            background-color: #ffff00;
+            height: 2px;
+            width: 0;
             position: absolute;
-            left: 0;
-            top: -5px;
-            opacity: 0;
-            transition: 200ms linear;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -5px;
+            transition: width .4s linear;
         }
         
-        .navigation__list-link-instagram::before {
-            background-image: url(../img/header/instagram.png);
-        }
-        
-        .navigation__list-link-facebook::before {
-            background-image: url(../img/header/facebook.png);
-        }
-        
-        .navigation__list-link-twitter::before {
-            background-image: url(../img/header/twitter.png);
-        }
-        
-        .navigation__list-link-pinterest::before {
-            background-image: url(../img/header/pinterest.png);
-        }
-        
-        .navigation__list-link:hover::before {
-            opacity: 1;
+        .order-link:hover::after {
+            width: 100%;
+            color: white;
         }
         
         .header__title {
