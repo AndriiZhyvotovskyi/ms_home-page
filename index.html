@@ -16,30 +16,30 @@
             <p class="order"><a href="" class="order-link">нажми сюда</a> и отправь свой заказ</p>
         </nav>
         <h1 class="header__title ">сайт<span class="color-decoration">html+css</span> <br>разработчика</h1>
-        <a href="# " class="arrow-link"><span class="arrow">&#x25bd</span></a>
+        <a href="#greeting" class="arrow-link"><span class="arrow">&#x25bd</span></a>
         <nav class="menu container ">
             <ul class="menu__list ">
                 <li class="menu__list-item ">
-                    <a href="# " class="menu__list-link ">мои работы</a>
+                    <a href="#portfolio" class="menu__list-link ">мои работы</a>
                 </li>
                 <li class="menu__list-item ">
-                    <a href="# " class="menu__list-link ">обо мне</a>
+                    <a href="#about-me" class="menu__list-link ">обо мне</a>
                 </li>
                 <li class="menu__list-item ">
                     <a href="# " class="menu__list-link ">резюме</a>
                 </li>
                 <li class="menu__list-item ">
-                    <a href="# " class="menu__list-link ">контакты</a>
+                    <a href="#contacts" class="menu__list-link ">контакты</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="greeting ">
+        <section class="greeting" id="greeting">
             <div class="container ">
                 <div class="greeting__item">
                     <p class="greeting__description">
-                        <q>Привет! добро пожаловать на сайт, где ты можешь заказать свой лучший лендинг пейдж, быстро, качественно и без дальнейших правок</q> Андрей Животовский: HTML- developer
+                        <q>Привет! добро пожаловать на сайт, где ты можешь заказать свой лучший лендинг пейдж, быстро, качественно и без дальнейших правок</q> <br> <span class="text-dec-first">Андрей Животовский: HTML- developer</span>
                     </p>
                     <div class="social-overlay__wrap">
                         <img src="./img/about_me/my-photo.jpg " alt="my-photo " width="290 " height="380 ">
@@ -63,15 +63,17 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio ">
+        <section class="portfolio" id="portfolio">
             <h2 class="section-title ">мои работы</h2>
             <ul class="portfolio__list container ">
-                <li class="portfolio__list-item ">
-                    <img src="./img/portfolio/project_1.jpg " alt="project_1 " width="360 " height="360 ">
-                    <h2 class="portfolio__list-title ">проект #1</h2>
-                    <div class="overlay ">
-                    </div>
-                </li>
+                <a href="#">
+                    <li class="portfolio__list-item ">
+                        <img src="./img/portfolio/project_1.jpg " alt="project_1 " width="360 " height="360 ">
+                        <h2 class="portfolio__list-title ">проект #1</h2>
+                        <div class="overlay ">
+                        </div>
+                    </li>
+                </a>
                 <li class="portfolio__list-item ">
                     <img src="./img/portfolio/project_1.jpg " alt="project_1 " width="360 " height="360 ">
                     <h2 class="portfolio__list-title ">проект #2</h2>
@@ -105,7 +107,7 @@
             </ul>
 
         </section>
-        <section class="about-me">
+        <section class="about-me" id="about-me">
             <h2 class="section-title ">обо мне</h2>
             <div class="about-me__item">
                 <ul class="about-me__list-program ">
@@ -143,15 +145,36 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts container" id="contacts">
             <h2 class="section-title ">контакты</h2>
-            <div class="contacts__item container">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis possimus beatae obcaecati reprehenderit iste tenetur quaerat quod ut, repellendus similique odio expedita quidem accusantium, incidunt modi sequi minima error et perferendis
-                    in dicta, harum recusandae eius! Nisi ipsum consectetur in, facere eligendi quibusdam voluptate, delectus ratione harum aliquam omnis! Numquam nulla fugit ex. Esse laborum accusamus error, libero molestias exercitationem vitae minima
-                    nam asperiores amet totam nisi excepturi obcaecati enim, iure voluptatum tenetur? Dolor, cum repellendus eveniet molestias consequuntur natus error praesentium dolores aperiam optio earum vel eius in obcaecati, labore est laborum unde
-                    aut temporibus placeat ad iusto consequatur?</p>
-            </div>
+            <div class="contacts__item">
+                <div class="form-wrapper">
+                    <form class="contacts__form" action="#">
+                        <ul class="personal-data">
+                            <li class="input">
+                                <input type="text" name="name" placeholder="фамилия имя *" required>
+                            </li>
+                            <li class="input">
+                                <input type="text" name="order" placeholder="тип заказа *" required>
+                            </li>
+                            <li class="input">
+                                <input type="email" name="email" placeholder="ваш email *" required>
+                            </li>
+                            <li class="input">
+                                <input type="text" name="phone" placeholder="номер телефона *" required>
+                            </li>
+                        </ul>
+                        <textarea name="massege" id="" cols="30" rows="10" class="wish" placeholder="комментарий к заказу"></textarea>
+                        <section class="buttons">
+                            <button class="btn">submit</button>
+                            <button type="reset" class="btn">reset</button>
+                        </section>
+                    </form>
+                </div>
+                <div class="developer-screen">
 
+                </div>
+            </div>
         </section>
 
     </main>
