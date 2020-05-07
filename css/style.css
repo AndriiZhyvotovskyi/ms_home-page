@@ -694,3 +694,34 @@ body {
     width: 400px;
     height: 400px;
 }
+
+
+/* ---------------------------------footer ---------------------------------------------*/
+
+.footer {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background-color: rgb(83, 75, 75);
+}
+
+.footer-item {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.footer__about-me {
+    width: 35%;
+}
+
+.footer__navigation {
+    width: 15%;
+}
+
+.footer__contacts {
+    width: 25%;
+}
+
+.footer__following {
+    width: 25%;
+}
