@@ -710,18 +710,83 @@ body {
     color: #fff;
 }
 
+.footer-title {
+    text-transform: uppercase;
+    font-family: var(--font-second);
+    margin-bottom: 20px;
+}
+
 .footer__about-me {
     width: 35%;
+    padding-right: 30px;
 }
 
 .footer__navigation {
     width: 15%;
+    padding-right: 30px;
+}
+
+.footer__navigation-item-link {
+    color: #fff;
 }
 
 .footer__contacts {
     width: 25%;
+    padding-right: 30px;
 }
 
 .footer__following {
     width: 25%;
+    padding-right: 30px;
+}
+
+.footer__following-item {
+    display: flex;
+}
+
+.footer__following-list {
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.footer__following-link {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    position: relative;
+}
+
+.footer__following-link::after {
+    content: '';
+    display: block;
+    background-color: #ffff00;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    transition: width .3s linear;
+}
+
+.footer__following-link:hover::after {
+    width: 100%;
+    color: white;
+}
+
+.footer__following-link-instagram {
+    background-image: url(../img/footer/icon-instagram.png);
+}
+
+.footer__following-link-telegram {
+    background-image: url(../img/footer/icon-telegram.png);
+}
+
+.footer__following-link-facebook {
+    background-image: url(../img/footer/icon-facebook.png);
+}
+
+.footer__following-link-twitter {
+    background-image: url(../img/footer/icon-twitter.png);
 }
