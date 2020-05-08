@@ -149,7 +149,15 @@
                                 <input type="text" name="name" placeholder="фамилия имя *" required>
                             </li>
                             <li class="input">
-                                <input type="text" name="order" placeholder="тип заказа *" required>
+                                <!-- <input type="text" name="order" placeholder="тип заказа *" required> -->
+                                <select name="user_city" class="contact-form__select">
+                                    <option disabled selected>тип заказа *</option>
+                                    <option value="lending">лендинг</option>
+                                    <option value="site">многостраничный сайт</option>
+                                    <option value="resume">сайт-резюме</option>
+                                    <option value="resume">свой вариант</option>
+
+                                </select>
                             </li>
                             <li class="input">
                                 <input type="email" name="email" placeholder="ваш email *" required>
