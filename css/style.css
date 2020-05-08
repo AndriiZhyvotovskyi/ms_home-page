@@ -19,14 +19,7 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Font awesome';
-    src: url('../webfonts/fa-solid-900.woff') format('woff'), url('../webfonts/fa-solid-900.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
-}
-
- :root {
+:root {
     --font-first: "Montserrat", sans-serif;
     --font-second: "Jura", sans-serif;
     --font-third: "Caveat", cursive;
@@ -35,19 +28,19 @@
 
 @keyframes animation_background {
     0% {
-        box-shadow: 25px 0px 70px -26px rgba(243, 229, 33, 0.75);
+        box-shadow: 25px 0px 40px -16px rgba(243, 229, 33, 1);
     }
     25% {
-        box-shadow: 0px 25px 70px -26px rgba(243, 229, 33, 0.75);
+        box-shadow: 0px 25px 40px -16px rgba(243, 229, 33, 1);
     }
     50% {
-        box-shadow: -25px 0px 70px -26px rgba(243, 229, 33, 0.75);
+        box-shadow: -25px 0px 40px -16px rgba(243, 229, 33, 1);
     }
     75% {
-        box-shadow: 0px -25px 70px -26px rgba(243, 229, 33, 0.75);
+        box-shadow: 0px -25px 40px -16px rgba(243, 229, 33, 1);
     }
     100% {
-        box-shadow: 25px 0px 70px -26px rgba(243, 229, 33, 0.75);
+        box-shadow: 25px 0px 40px -16px rgba(243, 229, 33, 1);
     }
 }
 
@@ -198,12 +191,14 @@ body {
     justify-content: space-between;
     font-size: 14px;
     font-weight: 600;
+    font-size: 18px;
 }
 
 .logotype {
     color: #ffffff;
     transition: color 200ms linear;
     font-family: var(--font-logotype);
+    font-size: 18px;
 }
 
 .logotype:hover {
@@ -285,7 +280,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     border-top: solid 4px #ffffff;
-    font-size: 14px;
+    font-size: 18px;
     transition: 300ms linear;
     cursor: pointer;
 }
@@ -302,7 +297,7 @@ body {
 }
 
 .menu__list-item:hover {
-    background-color: yellow;
+    background-color: rgb(255, 255, 0, 0.8);
 }
 
 .menu__list-item:hover .menu__list-link {
@@ -315,7 +310,7 @@ body {
 .greeting {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: #fff;
+    background: rgb(255, 255, 255) url(../img/about_me/background-first.png) no-repeat left bottom;
     animation-name: anim_shadow;
     animation-duration: 3s;
     animation-iteration-count: 1;
@@ -332,6 +327,14 @@ body {
 .greeting__description {
     max-width: 60%;
     font-size: 34px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, .8);
+    border: 1px solid rgb(156, 156, 156);
+    animation-name: anim_shadow;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .social-overlay__wrap {
@@ -384,29 +387,28 @@ body {
 .social-overlay__item-link::after {
     display: block;
     content: '';
-    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
-    font-weight: 900;
-    font-size: 50px;
-    color: black;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
     transition-property: transform;
-    transition-duration: .3s;
+    transition-duration: .2s;
     transition-timing-function: linear;
 }
 
 .social-overlay__item-link-instagram::after {
-    content: '\f16d';
+    background-image: url(../img/greeting/social-instagram.png);
 }
 
 .social-overlay__item-link-facebook::after {
-    content: '\f082';
+    background-image: url(../img/greeting/social-fasebook.png);
 }
 
 .social-overlay__item-link-twitter::after {
-    content: '\f081';
+    background-image: url(../img/greeting/social-twitter.png);
 }
 
-.social-overlay__item-link-git::after {
-    content: '\f092';
+.social-overlay__item-link-telegram::after {
+    background-image: url(../img/greeting/social-telegram.png);
 }
 
 .social-overlay__item-link:hover::after {
@@ -444,7 +446,6 @@ body {
 
 .portfolio__list-item {
     width: 340px;
-    margin-top: 0;
     position: relative;
     display: flex;
     justify-content: center;
@@ -496,19 +497,35 @@ body {
     animation-fill-mode: forwards;
 }
 
+.portfolio__list-link {
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    padding-top: 4px;
+    display: block;
+    border-radius: 20px;
+    color: black;
+    font-family: var(--font-first);
+    font-size: 22px;
+    background-color: rgb(248, 219, 52);
+    width: 120px;
+    height: 40px;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity, transform;
+    transition-timing-function: linear;
+    transition-duration: 0.1s;
+}
 
-/* .portfolio__list-item:hover .overlay {
-            background-color: rgb(255, 255, 0);
-            opacity: 0.7;
-        } */
+.portfolio__list-item:hover .portfolio__list-link {
+    opacity: 1;
+}
 
-
-/*         
-        .portfolio__list-item:hover .portfolio__list-title {
-            animation: name-apper 0.5s linear;
-            animation-iteration-count: 1;
-            z-index: 2;
-        } */
+.portfolio__list-link:hover {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    opacity: 1;
+}
 
 
 /* ---------------------------------------about_me--------------------------------- */
@@ -516,13 +533,15 @@ body {
 .about-me {
     padding-top: 120px;
     padding-bottom: 120px;
-    background-color: #fff;
+    background: rgb(255, 255, 255) url(../img/about_me/background.png) no-repeat right bottom;
     animation-name: anim_shadow;
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
+
+.about-me::before {}
 
 .about-me .section-title {
     color: #000;
@@ -534,11 +553,13 @@ body {
     padding: 20px;
     margin: 0 auto;
     max-width: 700px;
+    background-color: rgba(255, 255, 255, .8);
     border: 1px solid rgb(156, 156, 156);
-    animation-name: animation_background;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
+    animation-name: anim_shadow;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .about-me__discription-item {
@@ -546,17 +567,57 @@ body {
     margin-bottom: 30px;
 }
 
-.fab,
-.fas,
-.far {
-    font-size: 70px;
+.about-me__list-item {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.about-me__list-item::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-left: 15px;
+    transition: all;
+    transition-duration: .3s;
+    transition-timing-function: linear;
+}
+
+.about-me__list-item:hover::before {
+    transform: scale(1.3) rotate(10deg);
+}
+
+.about-me__list-item-html::before {
+    background-image: url(../img/footer/icon-html.png)
+}
+
+.about-me__list-item-css::before {
+    background-image: url(../img/footer/icon-css.png)
+}
+
+.about-me__list-item-adobe::before {
+    background-image: url(../img/footer/icon-adobe.png)
+}
+
+.about-me__list-item-ps::before {
+    background-image: url(../img/footer/icon-ps.png)
+}
+
+.about-me__list-item-git::before {
+    background-image: url(../img/footer/icon-git.png)
 }
 
 .about-me__list-program {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-right: 50px;
 }
 
@@ -702,6 +763,11 @@ body {
     padding-top: 120px;
     padding-bottom: 120px;
     background-color: rgb(83, 75, 75);
+    animation-name: anim_shadow;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .footer-item {
@@ -716,8 +782,13 @@ body {
     margin-bottom: 20px;
 }
 
+.footer-description {
+    margin-bottom: 20px;
+    color: rgb(177, 177, 177);
+}
+
 .footer__about-me {
-    width: 35%;
+    width: 30%;
     padding-right: 30px;
 }
 
@@ -726,13 +797,64 @@ body {
     padding-right: 30px;
 }
 
+.footer__navigation-item-list {
+    margin-bottom: 10px;
+}
+
 .footer__navigation-item-link {
-    color: #fff;
+    color: rgb(177, 177, 177);
+    border-bottom: 1px solid rgba(177, 177, 177, 0);
+    transition: border-bottom;
+    transition-timing-function: linear;
+    transition-duration: 0.3s;
+}
+
+.footer__navigation-item-link:hover {
+    border-bottom: 1px solid rgba(177, 177, 177, 1);
 }
 
 .footer__contacts {
-    width: 25%;
+    width: 30%;
     padding-right: 30px;
+}
+
+.footer__contacts-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__contacts-item-list {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+.footer__contacts-item-list::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    top: -5px;
+    left: 0;
+    position: absolute;
+}
+
+.footer__contacts-item-list-location::before {
+    background-image: url(../img/footer/icon-location.png);
+}
+
+.footer__contacts-item-list-email::before {
+    background-image: url(../img/footer/icon-mail.png);
+}
+
+.footer__contacts-item-list-phone::before {
+    background-image: url(../img/footer/icon-phone.png);
+}
+
+.footer__contacts-item-list {
+    color: rgb(177, 177, 177);
 }
 
 .footer__following {
