@@ -527,8 +527,6 @@ body {
     animation-iteration-count: infinite;
 }
 
-.about-me::before {}
-
 .about-me .section-title {
     color: #000;
 }
