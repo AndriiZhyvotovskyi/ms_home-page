@@ -1,6 +1,32 @@
-@media(min-width: 320px) and (max-width: 480px) {}
-
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+    .portfolio__list-item:nth-last-child(-n+3) {
+        display: none;
+    }
+    .about-me__list-item {
+        display: none;
+    }
+    .about-me__list-program {
+        margin: 0;
+    }
+    .developer-screen {
+        display: none;
+    }
+    .footer__about-me {
+        display: none;
+    }
+    .footer__following {
+        display: none;
+    }
+    .footer {
+        text-align: center;
+    }
+    .footer__contacts-item-list::before {
+        display: none;
+    }
+    .order {
+        display: none;
+    }
+}
 
 @media(min-width: 481px) and (max-width: 768px) {}
 

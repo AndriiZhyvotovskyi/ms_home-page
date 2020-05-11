@@ -160,7 +160,8 @@ body {
 
 .container {
     width: 320px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    padding: 0 10px;
 }
 
 .header {
@@ -179,6 +180,7 @@ body {
     font-size: 14px;
     font-weight: 600;
     font-size: 20px;
+    margin-bottom: 60px;
 }
 
 .logotype {
@@ -225,12 +227,14 @@ body {
 
 .header__title {
     text-align: center;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
-    line-height: 80px;
+    /* line-height: 80px; */
+    line-height: 40px;
     font-weight: 600;
     font-family: var(--font-second);
+    margin-bottom: 60px;
 }
 
 .color-decoration {
@@ -303,9 +307,10 @@ body {
 .greeting {
     /* padding-top: 120px;
     padding-bottom: 120px; */
-    padding-top: 20px;
+    /* padding-top: 20px; */
     padding-bottom: 20px;
-    background: rgb(255, 255, 255) url(../img/about_me/background-first.png) no-repeat left bottom;
+    /* background: rgb(255, 255, 255) url(../img/about_me/background-first.png) no-repeat left bottom; */
+    background: rgb(255, 255, 255);
     animation-name: anim_shadow;
     animation-duration: 3s;
     animation-iteration-count: 1;
@@ -325,25 +330,26 @@ body {
     font-size: 15px;
     padding: 20px;
     background-color: rgba(255, 255, 255, .8);
-    border: 1px solid rgb(156, 156, 156);
+    /* border: 1px solid rgb(156, 156, 156);
     animation-name: anim_shadow;
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 
 .my-photo {
-    margin: 0 auto;
+    margin-left: auto;
     width: 200px;
 }
 
 .social-overlay__wrap {
     position: relative;
-    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    /* box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75); */
 }
 
-.social-overlay::before {
+
+/* .social-overlay::before {
     content: '';
     position: absolute;
     top: 0;
@@ -354,7 +360,7 @@ body {
     background-color: rgba(255, 255, 0, .5);
     opacity: 0;
     transition: opacity .5s linear;
-}
+} */
 
 .social-overlay:hover::before {
     opacity: 1;
@@ -372,11 +378,13 @@ body {
     transition-property: transform, opacity;
     transition-duration: .5s;
     transition-timing-function: linear;
-    opacity: 0;
+    /* opacity: 0; */
+    opacity: 1;
+    transform: translateX(30px);
 }
 
 .social-overlay:hover .social-overlay__item {
-    transform: translateX(-60px);
+    /* transform: translateX(-60px); */
     /* 
             animation-duration: 1s;
             animation-iteration-count: 1;
@@ -420,8 +428,10 @@ body {
 /*------------------------------------ portfolio---------------------------------- */
 
 .portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .portfolio__list {
@@ -452,6 +462,7 @@ body {
     justify-content: center;
     align-items: center;
     transition: transform 0.3s linear;
+    margin-bottom: 20px;
 }
 
 .portfolio__list-item:hover {
@@ -528,18 +539,18 @@ body {
 /* ---------------------------------------about_me--------------------------------- */
 
 .about-me {
-    padding-top: 120px;
-    padding-bottom: 120px;
-    background: rgb(255, 255, 255) url(../img/about_me/background.png) no-repeat right bottom;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+    /* background: rgb(255, 255, 255) url(../img/about_me/background.png) no-repeat right bottom;
     animation-name: anim_shadow;
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 
 .about-me .section-title {
-    color: #000;
+    /* color: #000; */
 }
 
 .about-me__item {
@@ -550,16 +561,24 @@ body {
     max-width: 700px;
     background-color: rgba(255, 255, 255, .8);
     border: 1px solid rgb(156, 156, 156);
-    animation-name: anim_shadow;
+    /* animation-name: anim_shadow;
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 
 .about-me__discription-item {
     max-width: 700px;
     margin-bottom: 30px;
+}
+
+.about-me__discription-item-title {
+    font-size: 13px;
+}
+
+.about-me__discription-item-text {
+    font-size: 13px;
 }
 
 .about-me__list-item {
@@ -621,13 +640,14 @@ body {
 }
 
 .contacts {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+    padding-top: 20px;
 }
 
 .contacts__item {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 .form-wrapper {
@@ -638,8 +658,8 @@ body {
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    width: calc(100% - 400px);
-    margin-right: 50px;
+    /* width: calc(100% - 400px); */
+    /* margin-right: 50px; */
 }
 
 .contacts__form {
@@ -657,7 +677,7 @@ body {
 }
 
 .input input {
-    width: 180px;
+    width: 100%;
     height: 50px;
     border-style: none;
     padding-left: 10px;
@@ -672,7 +692,7 @@ body {
 }
 
 .input select {
-    width: 180px;
+    width: 100%;
     height: 50px;
     border-style: none;
     padding-left: 10px;
@@ -776,8 +796,10 @@ body {
 /* ---------------------------------footer ---------------------------------------------*/
 
 .footer {
-    padding-top: 70px;
-    padding-bottom: 50px;
+    /* padding-top: 70px;
+    padding-bottom: 50px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: rgb(83, 75, 75);
     animation-name: anim_shadow;
     animation-duration: 3s;
@@ -804,13 +826,13 @@ body {
 }
 
 .footer__about-me {
-    width: 30%;
+    /* width: 30%; */
     padding-right: 30px;
 }
 
 .footer__navigation {
-    width: 15%;
-    padding-right: 30px;
+    /* width: 15%; */
+    margin-bottom: 70px;
 }
 
 .footer__navigation-item-list {
@@ -830,8 +852,8 @@ body {
 }
 
 .footer__contacts {
-    width: 30%;
-    padding-right: 30px;
+    /* width: 30%; */
+    /* padding-right: 30px; */
 }
 
 .footer__contacts-item {
@@ -842,7 +864,7 @@ body {
 
 .footer__contacts-item-list {
     position: relative;
-    padding-left: 40px;
+    /* padding-left: 40px; */
     margin-bottom: 20px;
 }
 
@@ -874,7 +896,7 @@ body {
 }
 
 .footer__following {
-    width: 25%;
+    /* width: 25%; */
     padding-right: 30px;
 }
 
