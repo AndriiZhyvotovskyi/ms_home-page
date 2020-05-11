@@ -137,14 +137,13 @@ input[type="radio"].visually-hidden {
     overflow: hidden;
 }
 
-.container {
+
+/* .container {
     max-width: 1200px;
     margin: 0 auto;
-}
+} */
 
 body {
-    width: auto;
-    height: 100vh;
     background-image: url(../img/header/background-photo.jpg);
     background-position: center;
     background-size: cover;
@@ -160,22 +159,23 @@ body {
 }
 
 .container {
-    min-width: 1140px;
+    width: 320px;
     margin: 0 auto;
 }
 
 .header {
     color: white;
-    padding-top: 20px;
+    padding-top: 40px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .navigation {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
+    text-align: center;
     font-size: 14px;
     font-weight: 600;
     font-size: 20px;
@@ -185,7 +185,7 @@ body {
     color: #ffffff;
     transition: color 200ms linear;
     font-family: var(--font-logotype);
-    font-size: 20px;
+    font-size: 40px;
     padding: 5px;
 }
 
@@ -194,6 +194,7 @@ body {
 }
 
 .order-link {
+    display: block;
     color: #ffff00;
     position: relative;
     transition: color .4s linear;
@@ -224,7 +225,7 @@ body {
 
 .header__title {
     text-align: center;
-    font-size: 80px;
+    font-size: 35px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 80px;
@@ -260,16 +261,18 @@ body {
 }
 
 .menu__list {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 .menu__list-item {
-    width: 200px;
+    margin: 0 auto;
+    width: 150px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-top: solid 4px #ffffff;
+    border-radius: 20px;
+    /* border-top: solid 4px #ffffff; */
     font-size: 18px;
     transition: 300ms linear;
     cursor: pointer;
@@ -298,8 +301,10 @@ body {
 /* ---------------------------------------greeting--------------------------------- */
 
 .greeting {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
     background: rgb(255, 255, 255) url(../img/about_me/background-first.png) no-repeat left bottom;
     animation-name: anim_shadow;
     animation-duration: 3s;
@@ -309,14 +314,15 @@ body {
 }
 
 .greeting__item {
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; */
 }
 
 .greeting__description {
-    max-width: 60%;
-    font-size: 34px;
+    /* max-width: 60%; */
+    /* font-size: 34px; */
+    font-size: 15px;
     padding: 20px;
     background-color: rgba(255, 255, 255, .8);
     border: 1px solid rgb(156, 156, 156);
@@ -325,6 +331,11 @@ body {
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+}
+
+.my-photo {
+    margin: 0 auto;
+    width: 200px;
 }
 
 .social-overlay__wrap {
@@ -646,7 +657,7 @@ body {
 }
 
 .input input {
-    width: 320px;
+    width: 180px;
     height: 50px;
     border-style: none;
     padding-left: 10px;
@@ -661,7 +672,7 @@ body {
 }
 
 .input select {
-    width: 320px;
+    width: 180px;
     height: 50px;
     border-style: none;
     padding-left: 10px;
@@ -776,8 +787,8 @@ body {
 }
 
 .footer-item {
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
     color: #fff;
 }
 
