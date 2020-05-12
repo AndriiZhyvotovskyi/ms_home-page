@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 599px) {
     .portfolio__list-item:nth-last-child(-n+3) {
         display: none;
     }
@@ -28,7 +28,11 @@
     }
 }
 
-@media(min-width: 481px) and (max-width: 768px) {}
+@media (min-width: 600px) {
+    .container {
+        width: 600px;
+    }
+}
 
 @media(min-width: 769px) and (max-width: 992px) {}
 

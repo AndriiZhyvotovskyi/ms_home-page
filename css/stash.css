@@ -137,8 +137,18 @@ input[type="radio"].visually-hidden {
     overflow: hidden;
 }
 
+
+/* .container {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
 body {
-    background-color: #000000;
+    background-image: url(../img/header/background-photo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     font-family: var(--font-first);
 }
 
@@ -149,8 +159,8 @@ body {
 }
 
 .container {
-    margin: 0 auto;
     width: 320px;
+    /* margin: 0 auto; */
     padding: 0 10px;
 }
 
@@ -160,9 +170,12 @@ body {
     min-height: auto;
     display: flex;
     flex-direction: column;
+    /* justify-content: space-between; */
 }
 
 .navigation {
+    /* display: flex;
+  justify-content: space-between; */
     text-align: center;
     font-size: 14px;
     font-weight: 600;
@@ -251,6 +264,11 @@ body {
     margin-bottom: 50px;
 }
 
+.menu__list {
+    /* display: flex;
+  justify-content: space-between; */
+}
+
 .menu__list-item {
     margin: 0 auto;
     width: 150px;
@@ -258,6 +276,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 20px;
+    /* border-top: solid 4px #ffffff; */
     font-size: 18px;
     transition: 300ms linear;
     cursor: pointer;
@@ -286,7 +305,11 @@ body {
 /* ---------------------------------------greeting--------------------------------- */
 
 .greeting {
+    /* padding-top: 120px;
+  padding-bottom: 120px; */
+    /* padding-top: 20px; */
     padding-bottom: 20px;
+    /* background: rgb(255, 255, 255) url(../img/about_me/background-first.png) no-repeat left bottom; */
     background: rgb(255, 255, 255);
     animation-name: anim_shadow;
     animation-duration: 3s;
@@ -295,10 +318,24 @@ body {
     animation-iteration-count: infinite;
 }
 
+.greeting__item {
+    /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+}
+
 .greeting__description {
+    /* max-width: 60%; */
+    /* font-size: 34px; */
     font-size: 15px;
     padding: 20px;
     background-color: rgba(255, 255, 255, .8);
+    /* border: 1px solid rgb(156, 156, 156);
+  animation-name: anim_shadow;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; */
 }
 
 .my-photo {
@@ -308,7 +345,22 @@ body {
 
 .social-overlay__wrap {
     position: relative;
+    /* box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75); */
 }
+
+
+/* .social-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 0, .5);
+  opacity: 0;
+  transition: opacity .5s linear;
+} */
 
 .social-overlay:hover::before {
     opacity: 1;
@@ -326,11 +378,18 @@ body {
     transition-property: transform, opacity;
     transition-duration: .5s;
     transition-timing-function: linear;
+    /* opacity: 0; */
     opacity: 1;
     transform: translateX(30px);
 }
 
 .social-overlay:hover .social-overlay__item {
+    /* transform: translateX(-60px); */
+    /* 
+          animation-duration: 1s;
+          animation-iteration-count: 1;
+          animation-timing-function: linear;
+          animation-fill-mode: forwards; */
     opacity: 1;
 }
 
@@ -369,6 +428,8 @@ body {
 /*------------------------------------ portfolio---------------------------------- */
 
 .portfolio {
+    /* padding-top: 120px;
+  padding-bottom: 120px; */
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -477,6 +538,21 @@ body {
 
 /* ---------------------------------------about_me--------------------------------- */
 
+.about-me {
+    /* padding-top: 120px;
+  padding-bottom: 120px; */
+    /* background: rgb(255, 255, 255) url(../img/about_me/background.png) no-repeat right bottom;
+  animation-name: anim_shadow;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; */
+}
+
+.about-me .section-title {
+    /* color: #000; */
+}
+
 .about-me__item {
     display: flex;
     justify-content: center;
@@ -485,6 +561,11 @@ body {
     max-width: 700px;
     background-color: rgba(255, 255, 255, .8);
     border: 1px solid rgb(156, 156, 156);
+    /* animation-name: anim_shadow;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; */
 }
 
 .about-me__discription-item {
@@ -559,7 +640,14 @@ body {
 }
 
 .contacts {
+    /* padding-top: 120px;
+  padding-bottom: 120px; */
     padding-top: 20px;
+}
+
+.contacts__item {
+    /* display: flex;
+  justify-content: space-between; */
 }
 
 .form-wrapper {
@@ -570,6 +658,8 @@ body {
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
+    /* width: calc(100% - 400px); */
+    /* margin-right: 50px; */
 }
 
 .contacts__form {
@@ -707,6 +797,8 @@ body {
 /* ---------------------------------footer ---------------------------------------------*/
 
 .footer {
+    /* padding-top: 70px;
+  padding-bottom: 50px; */
     padding-top: 20px;
     padding-bottom: 20px;
     background-color: rgb(83, 75, 75);
@@ -718,6 +810,8 @@ body {
 }
 
 .footer-item {
+    /* display: flex;
+  justify-content: space-between; */
     color: #fff;
 }
 
@@ -733,10 +827,12 @@ body {
 }
 
 .footer__about-me {
+    /* width: 30%; */
     padding-right: 30px;
 }
 
 .footer__navigation {
+    /* width: 15%; */
     margin-bottom: 70px;
 }
 
@@ -756,6 +852,11 @@ body {
     border-bottom: 1px solid rgba(177, 177, 177, 1);
 }
 
+.footer__contacts {
+    /* width: 30%; */
+    /* padding-right: 30px; */
+}
+
 .footer__contacts-item {
     display: flex;
     flex-direction: column;
@@ -764,6 +865,7 @@ body {
 
 .footer__contacts-item-list {
     position: relative;
+    /* padding-left: 40px; */
     margin-bottom: 20px;
 }
 
@@ -795,6 +897,7 @@ body {
 }
 
 .footer__following {
+    /* width: 25%; */
     padding-right: 30px;
 }
 
