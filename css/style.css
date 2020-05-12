@@ -167,7 +167,7 @@ body {
 .header {
     color: white;
     padding-top: 40px;
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
@@ -743,8 +743,9 @@ body {
 
 .btn {
     display: block;
-    width: 120px;
+    width: 140px;
     height: 30px;
+    padding: 0 10px;
     background-color: yellow;
     border-style: none;
     font-size: 14px;
