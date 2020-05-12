@@ -401,7 +401,6 @@ body {
     justify-content: center;
     align-items: center;
     transition: transform 0.3s linear;
-    margin-bottom: 20px;
 }
 
 .portfolio__list-item:hover {
@@ -409,9 +408,10 @@ body {
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
 }
 
-.portfolio__list-item:not(:nth-child(-n+3)) {
+
+/* .portfolio__list-item:not(:nth-child(-n+3)) {
     margin-top: 40px;
-}
+} */
 
 .overlay {
     position: absolute;
@@ -480,11 +480,15 @@ body {
 .about-me__item {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 0 20px;
     margin: 0 auto;
     max-width: 700px;
     background-color: rgba(255, 255, 255, .8);
     border: 1px solid rgb(156, 156, 156);
+}
+
+.about-me__discription {
+    padding: 20px 0;
 }
 
 .about-me__discription-item {
@@ -516,7 +520,6 @@ body {
     top: 0;
     left: 0;
     position: absolute;
-    margin-left: 15px;
     transition: all;
     transition-duration: .3s;
     transition-timing-function: linear;
@@ -551,7 +554,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .about-me__item {
@@ -587,7 +590,7 @@ body {
 }
 
 .input input {
-    width: 100%;
+    width: auto;
     height: 50px;
     border-style: none;
     padding-left: 10px;
@@ -792,19 +795,6 @@ body {
 
 .footer__contacts-item-list {
     color: rgb(177, 177, 177);
-}
-
-.footer__following {
-    padding-right: 30px;
-}
-
-.footer__following-item {
-    display: flex;
-}
-
-.footer__following-list {
-    margin-right: 10px;
-    padding: 10px;
 }
 
 .footer__following-link {

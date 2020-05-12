@@ -1,39 +1,96 @@
-@media (max-width: 599px) {
-    .portfolio__list-item:nth-last-child(-n+3) {
-        display: none;
-    }
-    .about-me__list-item {
-        display: none;
-    }
-    .about-me__list-program {
-        margin: 0;
-    }
-    .developer-screen {
-        display: none;
-    }
-    .footer__about-me {
-        display: none;
-    }
-    .footer__following {
-        display: none;
-    }
-    .footer {
-        text-align: center;
-    }
-    .footer__contacts-item-list::before {
-        display: none;
-    }
-    .order {
-        display: none;
-    }
-}
-
-@media (min-width: 600px) {
-    .container {
-        width: 600px;
-    }
-}
-
-@media(min-width: 769px) and (max-width: 992px) {}
-
-@media(min-width: 993px) and (max-width: 1200px) {}
+            @media (max-width: 424px) {
+                .portfolio__list-item:not(:nth-child(1)) {
+                    margin-top: 30px;
+                }
+                .portfolio__list-item:nth-last-child(-n+3) {
+                    display: none;
+                }
+                .about-me__list-item {
+                    display: none;
+                }
+                .about-me__list-program {
+                    margin: 0;
+                }
+                .footer__following {
+                    display: none;
+                }
+                .footer__contacts-item-list::before {
+                    display: none;
+                }
+                .order {
+                    display: none;
+                }
+            }
+            
+            @media (min-width: 425px) {
+                .container {
+                    width: 425px;
+                    padding: 0 10px;
+                }
+                .portfolio__list {
+                    background-color: #fff;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    padding: 30px;
+                    animation-name: anim_shadow;
+                    animation-duration: 3s;
+                    animation-iteration-count: 1;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                }
+                .portfolio__list-item {
+                    width: 170px;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: transform 0.3s linear;
+                }
+                .portfolio__list-item:nth-last-child(-n+4) {
+                    margin-top: 20px;
+                }
+                .footer__contacts-item {
+                    display: inline-block;
+                    text-align: left;
+                    margin-bottom: 30px;
+                }
+                .footer__contacts-item-list {
+                    padding-left: 40px;
+                }
+                .footer__following-item {
+                    display: flex;
+                }
+                .footer__following-item {
+                    display: flex;
+                    justify-content: center;
+                }
+                .footer__following-list {
+                    padding: 10px;
+                }
+            }
+            
+            @media (max-width: 768px) {
+                .developer-screen {
+                    display: none;
+                }
+                .footer {
+                    text-align: center;
+                }
+                .footer__about-me {
+                    display: none;
+                }
+                .portfolio__list-title {
+                    display: none;
+                }
+            }
+            
+            @media (min-width: 1024px) {
+                body {
+                    background-image: url(../img/header/background-photo.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                }
+            }
