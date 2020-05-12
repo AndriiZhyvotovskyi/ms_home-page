@@ -234,6 +234,7 @@ body {
 }
 
 .arrow-link {
+    display: inline;
     text-align: center;
     animation-name: anim_arrow;
     animation-duration: 1s;
@@ -252,8 +253,18 @@ body {
     color: #ffff00;
 }
 
+.menu {
+    margin-bottom: 30px;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .menu__list-item {
-    width: 150px;
+    padding: 0 20px;
     text-align: center;
     padding-bottom: 3px;
     border-radius: 20px;
@@ -296,7 +307,7 @@ body {
 .greeting__description {
     font-size: 15px;
     padding: 20px 0;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .7);
     text-align: center;
 }
 
@@ -486,8 +497,7 @@ body {
     padding: 20px 0;
 }
 
-.about-me__discription-item {
-    max-width: 700px;
+.about-me__discription-item:not(:last-child) {
     margin-bottom: 30px;
 }
 
