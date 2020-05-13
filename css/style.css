@@ -364,8 +364,8 @@ body {
     background-image: url(../img/greeting/social-twitter.png);
 }
 
-.social-overlay__item-link-telegram::after {
-    background-image: url(../img/greeting/social-telegram.png);
+.social-overlay__item-link-git::after {
+    background-image: url(../img/greeting/social-git.png);
 }
 
 .social-overlay__item-link:hover::after {
@@ -491,6 +491,11 @@ body {
     max-width: 700px;
     background-color: rgba(255, 255, 255, .8);
     border: 1px solid rgb(156, 156, 156);
+    animation-name: anim_shadow;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
 .about-me__discription {
@@ -828,8 +833,8 @@ body {
     background-image: url(../img/footer/icon-instagram.png);
 }
 
-.footer__following-link-telegram {
-    background-image: url(../img/footer/icon-telegram.png);
+.footer__following-link-git {
+    background-image: url(../img/footer/icon-git-2.png);
 }
 
 .footer__following-link-facebook {
