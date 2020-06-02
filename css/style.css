@@ -234,7 +234,9 @@ body {
 }
 
 .arrow-link {
-    display: inline;
+    display: block;
+    width: 60px;
+    margin: 0 auto;
     text-align: center;
     animation-name: anim_arrow;
     animation-duration: 1s;
@@ -273,7 +275,8 @@ body {
     cursor: pointer;
 }
 
-.menu__list-link {
+
+/* .menu__list-link {
     color: #ffffff;
     font-weight: 600;
     transition: 200ms linear;
@@ -282,15 +285,46 @@ body {
 
 .menu__list-link:hover {
     color: #000000;
+} */
+
+.menu__list-link {
+    /* display: block; */
+    color: #ffff00;
+    position: relative;
+    transition: color .4s linear;
+    padding: 5px;
 }
 
-.menu__list-item:hover {
+.menu__list-link:hover {
+    color: white;
+}
+
+.menu__list-link::after {
+    content: '';
+    display: block;
+    background-color: #ffff00;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    transition: width .4s linear;
+}
+
+.menu__list-link:hover::after {
+    width: 100%;
+    color: white;
+}
+
+
+/* .menu__list-item:hover {
     background-color: rgb(255, 255, 0, 0.8);
 }
 
 .menu__list-item:hover .menu__list-link {
     color: #000000;
-}
+} */
 
 
 /* ---------------------------------------greeting--------------------------------- */
