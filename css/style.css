@@ -239,7 +239,7 @@ body {
     margin: 0 auto;
     text-align: center;
     animation-name: anim_arrow;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -275,20 +275,7 @@ body {
     cursor: pointer;
 }
 
-
-/* .menu__list-link {
-    color: #ffffff;
-    font-weight: 600;
-    transition: 200ms linear;
-    font-family: var(--font-second);
-}
-
-.menu__list-link:hover {
-    color: #000000;
-} */
-
 .menu__list-link {
-    /* display: block; */
     color: #ffff00;
     position: relative;
     transition: color .4s linear;
@@ -316,15 +303,6 @@ body {
     width: 100%;
     color: white;
 }
-
-
-/* .menu__list-item:hover {
-    background-color: rgb(255, 255, 0, 0.8);
-}
-
-.menu__list-item:hover .menu__list-link {
-    color: #000000;
-} */
 
 
 /* ---------------------------------------greeting--------------------------------- */
