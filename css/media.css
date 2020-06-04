@@ -1,4 +1,7 @@
     @media (max-width: 424px) {
+        .menu__list-icon {
+            display: none;
+        }
         .portfolio__list-item:not(:nth-child(1)) {
             margin-top: 30px;
         }
@@ -30,6 +33,9 @@
         .menu__list {
             display: flex;
             justify-content: space-between;
+        }
+        .menu__list-text {
+            display: none;
         }
         .menu__list-icon {
             width: 50px;
