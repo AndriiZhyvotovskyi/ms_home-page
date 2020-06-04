@@ -282,8 +282,6 @@ body {
 }
 
 .menu__list-icon {
-    width: 50px;
-    height: 50px;
     transition-property: transform, fill;
     transition-duration: .4s;
     transition-timing-function: linear;
@@ -292,10 +290,6 @@ body {
 
 .menu__list-icon:hover {
     fill: yellow;
-    /* animation-name: rotate-icon;
-    animation-duration: .5s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear; */
 }
 
 .menu__list-icon:hover {
