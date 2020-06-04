@@ -32,14 +32,25 @@
         justify-content: space-between;
     }
     .menu__list-text {
-        display: none;
+        font-size: 12px;
+        opacity: 0;
+        transform: rotateY(90deg);
+        transition: opacity, transform;
+        transition-timing-function: linear;
+        transition-duration: 0.3s;
+    }
+    .menu__list-link:hover .menu__list-text {
+        opacity: 1;
+        transform: rotateY(0deg)
     }
     .menu__list-icon {
         width: 50px;
         height: 50px;
     }
     .menu__list-link {
-        font-size: 11px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .portfolio__list {
         padding: 30px;
