@@ -2,9 +2,6 @@
         .portfolio__list-item:not(:nth-child(1)) {
             margin-top: 30px;
         }
-        .portfolio__list-item:nth-last-child(-n+3) {
-            display: none;
-        }
         .about-me__list-item {
             display: none;
         }
@@ -88,8 +85,8 @@
             align-items: center;
         }
         .portfolio__list-item {
-            width: 300px;
-            height: 300px;
+            width: 250px;
+            height: 250px;
         }
     }
     

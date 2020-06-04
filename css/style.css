@@ -375,12 +375,6 @@ body {
     transform: translateX(30px);
 }
 
-.social-overlay__item-link {
-    display: block;
-    width: 50px;
-    height: 50px;
-}
-
 .social-overlay__item-icon {
     width: 50px;
     height: 50px;
@@ -436,7 +430,7 @@ body {
 }
 
 .portfolio__list-item:hover .image-overlay {
-    background-size: 110%;
+    background-size: 103%;
 }
 
 .section-title {
@@ -457,8 +451,8 @@ body {
 }
 
 .portfolio__list-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .overlay {
@@ -550,49 +544,19 @@ body {
     font-size: 13px;
 }
 
-.about-me__list-item {
-    position: relative;
+.about-me__list-icon {
     display: block;
-    width: 50px;
-    height: 50px;
-}
-
-.about-me__list-item::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    top: 0;
-    left: 0;
-    position: absolute;
-    transition: all;
-    transition-duration: .8s;
+    width: 60px;
+    height: 60px;
+    fill: rgba(0, 0, 0, 0.8);
+    transition: transform;
     transition-timing-function: linear;
+    transition-duration: 1.5s;
 }
 
-.about-me__list-item:hover::before {
+.about-me__list-icon:hover {
     transform: rotateY(360deg);
-}
-
-.about-me__list-item-html::before {
-    background-image: url(../img/footer/icon-html.png)
-}
-
-.about-me__list-item-css::before {
-    background-image: url(../img/footer/icon-css.png)
-}
-
-.about-me__list-item-adobe::before {
-    background-image: url(../img/footer/icon-adobe.png)
-}
-
-.about-me__list-item-ps::before {
-    background-image: url(../img/footer/icon-ps.png)
-}
-
-.about-me__list-item-git::before {
-    background-image: url(../img/footer/icon-git.png)
+    fill: black;
 }
 
 .about-me__list-program {
