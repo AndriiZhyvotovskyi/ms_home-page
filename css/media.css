@@ -5,6 +5,9 @@
         .about-me__list-item {
             display: none;
         }
+        .menu__list-item {
+            line-height: 35px;
+        }
         .about-me__list-program {
             margin: 0;
         }
@@ -23,6 +26,13 @@
         .container {
             width: 425px;
             padding: 0 20px;
+        }
+        .menu__list {
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu__list-link {
+            font-size: 11px;
         }
         .portfolio__list {
             padding: 30px;
@@ -95,14 +105,12 @@
             width: 600px;
             padding: 0 30px;
         }
+        .menu__list-link {
+            font-size: 18px;
+        }
         .header__title {
             font-size: 70px;
             line-height: 70px;
-        }
-        .menu__list {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
         }
         .greeting__item {
             display: flex;
@@ -158,7 +166,12 @@
         }
     }
     
-    @media (max-width: 767px) {}
+    @media (min-width: 600px) and (max-width: 767px) {
+        .social-overlay__item-icon {
+            width: 30px;
+            height: 30px;
+        }
+    }
     
     @media (min-width: 768px) {
         .container {
@@ -170,7 +183,7 @@
             justify-content: space-between;
         }
         .menu__list-link {
-            font-size: 20px;
+            font-size: 23px;
         }
         .greeting {
             background: rgb(255, 255, 255) url(../img/about_me/background-first.png) no-repeat left bottom;
