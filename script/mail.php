@@ -11,6 +11,7 @@ $massage = $_POST['massage'];
 $type_order = $_POST['type_order'];
 
 
+
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
@@ -32,7 +33,7 @@ $mail->addAddress('zhyvotovskyiandrii@gmail.com');     // Кому будет у
 $mail->isHTML(true);                                  // Set email format to HTML
 
 $mail->Subject = 'Заявка с тестового сайта';
-$mail->Body    = '' .$name . ' оставил заявку,' '<br> его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email. '<br>сообщение: ' .$massage. '<br> тип заказа ' .$type_order;
+$mail->Body    = '' .$name . ' оставил заявку, его телефон ' .$phone. '<br>Почта этого пользователя: ' .$email. '<br>сообщение: ' .$massage. '<br>тип заказа: '.$type_order;
 $mail->AltBody = '';
 
 if(!$mail->send()) {
