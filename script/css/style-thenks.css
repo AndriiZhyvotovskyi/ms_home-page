@@ -16,7 +16,7 @@
         box-shadow: 0px 0px 20px 0px rgba(237, 253, 4, 0.75);
     }
     50% {
-        box-shadow: 0px 0px 0px 0px rgba(237, 253, 4, 0.75);
+        box-shadow: 0px 0px 5px 0px rgba(237, 253, 4, 0.75);
     }
     100% {
         box-shadow: 0px 0px 20px 0px rgba(237, 253, 4, 0.75);
@@ -72,7 +72,7 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
     margin: auto;
-    background-color: var(--color-first);
+    background-color: rgb(83, 75, 75);
     text-align: center;
     border-radius: 2px;
     animation-name: anim_shadow;
@@ -85,6 +85,7 @@ body {
 
 .window__title {
     margin-bottom: 20px;
+    color: var(--color-first);
 }
 
 .window__title::before {
@@ -92,13 +93,19 @@ body {
     display: block;
     width: 50px;
     height: 3px;
-    background-color: rgb(255, 94, 0);
+    background-color: yellow;
     position: absolute;
     top: 20px
 }
 
 .window__link {
-    color: var(--color-second);
+    color: var(--color-first);
+    font-weight: 700;
+    position: relative;
+}
+
+.window__link:hover {
+    color: yellow;
     font-weight: 700;
     position: relative;
 }
@@ -108,7 +115,7 @@ body {
     display: block;
     width: 0;
     height: 2px;
-    background-color: rgb(255, 94, 0);
+    background-color: var(--color-first);
     position: absolute;
     left: 50%;
     bottom: -10px;
