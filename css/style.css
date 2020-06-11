@@ -768,6 +768,9 @@ body {
     margin-bottom: 20px;
     color: rgb(177, 177, 177);
 }
+.signature {
+    margin-bottom: 10px;
+}
 
 .footer__navigation {
     margin-bottom: 70px;
